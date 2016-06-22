@@ -8,6 +8,7 @@ public class BowlTypeSelectFast : MonoBehaviour {
 
     public GameObject otherSelect;
     public GameObject mainTitle;
+    public GameObject scoreCard;
     public GameObject bowlingMachine;
     public Transform bowlingSpot;
     public GameObject wickets; //Ensure that wickets.cs script is not attached to these particular GameObjects
@@ -19,8 +20,9 @@ public class BowlTypeSelectFast : MonoBehaviour {
     {
         if (interacted == true)
         {
-            interacted = false;
+            StartCoroutine(LateCall());
             Instantiate(bowlingMachine, bowlingSpot.position, bowlingSpot.rotation);
+            interacted = false;
         }
     }
 
@@ -42,4 +44,10 @@ public class BowlTypeSelectFast : MonoBehaviour {
             interacted = true;
         }
     }
+
+    IEnumerator LateCall()
+    {
+        yield return new WaitForSeconds(.9f);
+        scoreCard.SetActive(true); //turns on the scoredcard
+    }  
 }

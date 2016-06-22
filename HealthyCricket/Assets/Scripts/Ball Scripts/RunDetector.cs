@@ -4,6 +4,7 @@ using System.Collections;
 public class RunDetector : MonoBehaviour {
 
     //Script attached to ball prefab, calculates run scored
+    //Use this script to reset runOnce balls on ball instantiation
 
     float boundaryDist; //sets the boundary distance
     float hitDist; //the distance the ball has been hit on the X-Z plane (ground plane)
@@ -14,6 +15,9 @@ public class RunDetector : MonoBehaviour {
     float squareBallDistZ;
     float ballDistZ;
 
+    int fours; //counts fours
+    int sixes; //counts sixes
+
     bool runOnce;
 
     Transform ball;
@@ -22,8 +26,10 @@ public class RunDetector : MonoBehaviour {
 
     void Awake()
     {
-        boundaryDist = 35f; //sets the distance for a boundary. Based on the X and Z scale of BoundaryDist
+        boundaryDist = 45f; //sets the distance for a boundary. Based on the X and Z scale of BoundaryDist
+
         runOnce = false;
+        ScoreCard.runOnce = false; //resets the runOnce on scoreBoard on ball initialize
 
         ball = gameObject.GetComponent<Transform>();
     }
@@ -59,9 +65,9 @@ public class RunDetector : MonoBehaviour {
     {
         if (!runOnce) //to ensure script only runs one time
         {
-            BowlingMachine.runs += 6;
+            ScoreCard.runsScored += 6;
             Debug.Log("6 Runs!");
-            Debug.Log("Score is " + BowlingMachine.runs + " runs");
+            sixes++; //counts sixes
             runOnce = true;
         }
     }
@@ -70,9 +76,9 @@ public class RunDetector : MonoBehaviour {
     {
         if (!runOnce)
         {
-            BowlingMachine.runs += 4;
+            ScoreCard.runsScored += 4;
             Debug.Log("4 Runs!");
-            Debug.Log("Score is " + BowlingMachine.runs + " runs");
+            fours++; //counts fours
             runOnce = true;
         }
     }

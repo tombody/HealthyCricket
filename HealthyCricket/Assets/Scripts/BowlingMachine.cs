@@ -9,6 +9,7 @@ public class BowlingMachine : MonoBehaviour {
 
     public Rigidbody ballPrefab;
     public Transform bowlingSpot;
+
     public Transform wicketsPosition;
     public GameObject wicketsPrefab;
     public Transform wicketsBowlerEndPosition;
@@ -17,10 +18,6 @@ public class BowlingMachine : MonoBehaviour {
     public float fastBowlLow, fastBowlHigh, spinBowlLow, spinBowlHigh; //sets the range values for fast and spin bowling
 
     private float bowlSpeed;
-    private int ballsBowled = 0; //to implement with either loop or if statement
-
-    static public int runs; //tallied in RunDetector script
-    static public int wicketsRemaining; //tallied in WicketsRemaining script
 
     [HideInInspector]static public bool hitCheck; //checks to see if ball has already been hit by bat
     [HideInInspector]static public bool alreadyBounced = false;//checks to see if the ball has colllided with the pitch, used to ensure the ball only spins on first contact
@@ -31,7 +28,6 @@ public class BowlingMachine : MonoBehaviour {
 
     void Start()
     {
-        //bowlTypeGen = Random.Range(0, 2); //0 is FastBowler, 1 is SpinBowler
         fastBowlLow = 1700f;
         fastBowlHigh = 2200f;
         spinBowlLow = 1000f;
@@ -40,6 +36,7 @@ public class BowlingMachine : MonoBehaviour {
         BowlAgain();
         WicketReset();
         WicketBowlerEndReset();
+
     }
 
     //--------------------------------------------------------------------------------------------------//
@@ -82,8 +79,7 @@ public class BowlingMachine : MonoBehaviour {
         ballInstance.AddForce(bowlingSpot.forward * bowlSpeed);
         hitCheck = false; //ensures that each instantiated ball will collide with bat
 
-        ballsBowled++; //adds 1 to the balls bowled counter
-        //Debug.Log(ballsInOver + " balls have been bowled.");
+        ScoreCard.ballsBowled++; //adds 1 to the balls bowled counter
     }
 
     //--------------------------------------------------------------------------------------------------//
