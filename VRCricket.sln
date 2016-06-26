@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VRCricket.CSharp.Plugins", "VRCricket.CSharp.Plugins.csproj", "{4B6792CE-3D9B-939F-4028-B5C723C4DF88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VRCricket.CSharp", "VRCricket.CSharp.csproj", "{EDA4E872-18A8-4EC0-6BBE-4B60AA9D4000}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VRCricket.CSharp.Editor", "VRCricket.CSharp.Editor.csproj", "{2D54BABE-BBEA-EA5B-D667-C0C45DF356CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B6792CE-3D9B-939F-4028-B5C723C4DF88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B6792CE-3D9B-939F-4028-B5C723C4DF88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B6792CE-3D9B-939F-4028-B5C723C4DF88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B6792CE-3D9B-939F-4028-B5C723C4DF88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDA4E872-18A8-4EC0-6BBE-4B60AA9D4000}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDA4E872-18A8-4EC0-6BBE-4B60AA9D4000}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDA4E872-18A8-4EC0-6BBE-4B60AA9D4000}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDA4E872-18A8-4EC0-6BBE-4B60AA9D4000}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D54BABE-BBEA-EA5B-D667-C0C45DF356CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D54BABE-BBEA-EA5B-D667-C0C45DF356CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D54BABE-BBEA-EA5B-D667-C0C45DF356CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D54BABE-BBEA-EA5B-D667-C0C45DF356CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

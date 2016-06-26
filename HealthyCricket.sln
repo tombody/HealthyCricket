@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthyCricket.CSharp.Plugins", "HealthyCricket.CSharp.Plugins.csproj", "{2FE72032-9F28-9BBA-295E-A2FC41EA7C72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthyCricket.CSharp", "HealthyCricket.CSharp.csproj", "{C6F797CE-DB3F-1B73-C9C7-21DA118F833B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthyCricket.CSharp.Editor", "HealthyCricket.CSharp.Editor.csproj", "{837AA568-0C46-E08F-6A11-8BE39BBB0358}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FE72032-9F28-9BBA-295E-A2FC41EA7C72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FE72032-9F28-9BBA-295E-A2FC41EA7C72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FE72032-9F28-9BBA-295E-A2FC41EA7C72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FE72032-9F28-9BBA-295E-A2FC41EA7C72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6F797CE-DB3F-1B73-C9C7-21DA118F833B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6F797CE-DB3F-1B73-C9C7-21DA118F833B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6F797CE-DB3F-1B73-C9C7-21DA118F833B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6F797CE-DB3F-1B73-C9C7-21DA118F833B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{837AA568-0C46-E08F-6A11-8BE39BBB0358}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{837AA568-0C46-E08F-6A11-8BE39BBB0358}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{837AA568-0C46-E08F-6A11-8BE39BBB0358}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{837AA568-0C46-E08F-6A11-8BE39BBB0358}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
